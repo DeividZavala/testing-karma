@@ -53,4 +53,19 @@ describe("StockCounterComponent", () => {
         expect(component.value).toBe(0);
     });
 
+    it("No debe incrementar más del valor máximo", () => {
+        component.step = 20;
+        component.max = 20;
+        component.increment();
+        component.increment();
+        expect(component.value).toBe(20);
+    });
+
+    it("Debe de regresar el resultado al cambiar el valor", () => {
+        spyOn(component.changed, "emit").and.callThrough();
+        component.step = 100;
+        component.increment();
+        expect(component.changed.emit).toHaveBeenCalledWith(100);
+    })
+
 });
