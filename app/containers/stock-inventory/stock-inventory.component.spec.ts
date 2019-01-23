@@ -1,4 +1,4 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+/*import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { BrowserDynamicTestingModule, platformBrowserDynamicTesting } from '@angular/platform-browser-dynamic/testing';
 import { DebugElement, NO_ERRORS_SCHEMA } from '@angular/core';
 
@@ -39,8 +39,8 @@ describe('StockInventoryComponent', () => {
             declarations: [
                 StockInventoryComponent
             ],
-            // Se usa cuando tenemos componentes que tienen componentes hijos que no queremos importar o usar en el test
-            // esto ayuda a mejorar el performance de mis tests
+             Se usa cuando tenemos componentes que tienen componentes hijos que no queremos importar o usar en el test
+             esto ayuda a mejorar el performance de mis tests
             schemas: [NO_ERRORS_SCHEMA],
             providers: [
                 {provide: StockInventoryService, useClass: MockStockInventoryService}
@@ -83,4 +83,4 @@ describe('StockInventoryComponent', () => {
     })
 
 
-});
+});*/
